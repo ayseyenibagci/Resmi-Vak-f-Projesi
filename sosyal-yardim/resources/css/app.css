@@ -1,0 +1,262 @@
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+body {
+    padding-top: 70px; 
+}
+
+.navbar {
+    background-color: #002F6C !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+
+#heroSlider {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.carousel-inner img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-box-transparent {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 25px 40px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.hero-box-transparent h1 {
+    font-size: 1.9rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-box-transparent p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.card-custom {
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-custom img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-custom h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-custom p {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+
+.card-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer.footer-mavi {
+    background-color: #002F6C !important;
+    color: white !important;
+    text-align: center;
+    padding: 16px;
+    font-weight: 500;
+}
+
+.footer-mavi {
+    background-color: #002F6C; 
+    color: white;
+    font-size: 0.95rem;
+}
+
+.footer-mavi h5, .footer-mavi h6 {
+    color: #ffffff;
+}
+
+.footer-mavi .footer-link {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-mavi .footer-link:hover {
+    color: #ffc107;
+}
+
+.footer-mavi i {
+    transition: transform 0.3s ease;
+}
+
+.footer-mavi i:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive padding ayarı */
+@media (max-width: 768px) {
+    .footer-mavi {
+        text-align: center;
+    }
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+.sosyal-ikonlar a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sosyal-ikonlar a:hover {
+    transform: scale(1.2);
+    color: #ffc107 !important;
+}
+
+.sosyal-ikonlar {
+    gap: 15px;
+}
+
+.ikon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: #002F6C;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.ikon-link:hover {
+    transform: scale(1.15);
+    background-color: #ffc107;
+    color: #002F6C;
+}
+.nav-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.vakif-logo {
+    font-size: 1.8rem;         
+    font-style: italic;        
+    letter-spacing: 2px;       
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+.yardim-kutusu {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+
+.yardim-metin {
+    max-width: 500px;
+}
+.yardim-resim {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.yardim-aciklama {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+img.rounded-circle {
+    border: 4px solid #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+img.rounded-circle:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
